@@ -18,28 +18,23 @@ a:link, a:visited, a:hover, a:active {
 .nav-brand {
     padding-top: 1.25rem;
 }
-/*@keyframes nav_underline {*/
-    /*from { border-bottom: 3px solid #718aa6; width: 0;}*/
-    /*to { border-bottom: 3px solid #718aa6; width: 80%;}*/
-/*}*/
+@keyframes nav_underline {
+    from { border-bottom: 3px solid #718aa6; width: 0;}
+    to { border-bottom: 3px solid #718aa6; width: 80%;}
+}
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding-top: 1.25rem;
 }
 .navbar li {
-    /*position: relative;*/
     display: inline-block;
-    list-style-type: none;
     font-size: 1.5rem;
-    /*width: 20%;*/
 }
-.navbar ul a {
+.navbar a {
     display: inline-block;
     padding-bottom: .2rem;
-    text-decoration: none;
-    width: 0;
-    border-bottom: 3px solid #718aa6;
+    border-bottom: 3px solid #ffffff;
 }
 .navbar a:hover {
     right: 0;
