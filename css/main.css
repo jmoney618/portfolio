@@ -18,11 +18,7 @@ a:link, a:visited, a:hover, a:active {
 .nav-brand {
     padding-top: 1.25rem;
 }
-@keyframes nav_underline {
-    from { border-bottom: 3px solid #718aa6; width: 0;}
-    to { border-bottom: 3px solid #718aa6; width: 80%;}
-}
-.navbar ul {
+#menu {
     list-style-type: none;
     margin: 0;
     padding-top: 1.25rem;
@@ -33,16 +29,39 @@ a:link, a:visited, a:hover, a:active {
 }
 .navbar a {
     display: inline-block;
-    padding-bottom: .2rem;
-    border-bottom: 3px solid #ffffff;
+    position: relative;
+    padding-bottom: 3px;
 }
-.navbar a:hover {
+.navbar a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+.navbar a:after {
+    content: '';
+    display: block;
+    position: absolute;
     right: 0;
-    animation: nav_underline;
-    -webkit-animation-duration: 4s;
-    -moz-animation-duration: 4s;
-    -o-animation-duration: 4s;
-    animation-duration: 4s;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #718aa6;
+    transition: width .5s ease;
+}
+.navbar a:hover:before {
+    width: 100%;
+    background: #718aa6;
+    transition: width .5s ease;
+}
+.navbar a:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
 }
 .jumbotron {
     position: relative;
@@ -71,6 +90,7 @@ a:link, a:visited, a:hover, a:active {
 .external_sites img {
     max-width: 3em;
     margin: 0 0.2rem;
+    float: right;
 }
 #portfolio_heading {
     max-width: 15%;
