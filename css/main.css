@@ -9,10 +9,11 @@ a:link, a:visited, a:hover, a:active {
 #logo {
     font-size: 2rem;
     font-weight: bold;
+    text-decoration: none;
 }
 .navbar {
     height: 60px;
-    margin: 0;
+    margin-bottom: 5px;
     padding: 0;
 }
 .nav-brand {
@@ -23,16 +24,16 @@ a:link, a:visited, a:hover, a:active {
     margin: 0;
     padding-top: 1.25rem;
 }
-.navbar li {
+#menu li {
     display: inline-block;
     font-size: 1.5rem;
 }
-.navbar a {
+#menu a {
     display: inline-block;
     position: relative;
     padding-bottom: 3px;
 }
-.navbar a:before {
+#menu a:before {
     content: '';
     display: block;
     position: absolute;
@@ -42,7 +43,7 @@ a:link, a:visited, a:hover, a:active {
     width: 0;
     transition: width 0s ease, background .5s ease;
 }
-.navbar a:after {
+#menu a:after {
     content: '';
     display: block;
     position: absolute;
@@ -53,12 +54,12 @@ a:link, a:visited, a:hover, a:active {
     background: #718aa6;
     transition: width .5s ease;
 }
-.navbar a:hover:before {
+#menu a:hover:before {
     width: 100%;
     background: #718aa6;
     transition: width .5s ease;
 }
-.navbar a:hover:after {
+#menu a:hover:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
@@ -88,6 +89,8 @@ a:link, a:visited, a:hover, a:active {
     margin: auto;
 }
 .external_sites img {
+    position: relative;
+    top: -3rem;
     max-width: 3em;
     margin: 0 0.2rem;
     float: right;
@@ -104,7 +107,7 @@ a:link, a:visited, a:hover, a:active {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .entry_bg {
-    height: 16.5rem;
+    min-height: 18.5rem; /* MAY BE ABLE TO REMOVE THIS */
     margin: 3rem auto;
     padding: 1.25rem 1rem;
     -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -112,7 +115,7 @@ a:link, a:visited, a:hover, a:active {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .portfolio_entry {
-    height: 11.5rem;
+    /*height: 11.5rem;*/
 }
 .footer {
     height: 7rem;
