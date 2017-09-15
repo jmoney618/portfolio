@@ -90,7 +90,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .external_sites img {
     position: relative;
-    top: -3rem;
+    top: 1rem;
     max-width: 3em;
     margin: 0 0.2rem;
     float: right;
@@ -107,15 +107,37 @@ a:link, a:visited, a:hover, a:active {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .entry_bg {
-    min-height: 18.5rem; /* MAY BE ABLE TO REMOVE THIS */
+    background-color: #e9ecef;
+    height: 90%;
     margin: 3rem auto;
     padding: 1.25rem 1rem;
     -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.portfolio_entry {
-    /*height: 11.5rem;*/
+.entry_image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.entry_info {
+    color: #718aa6;
+    font-size: 1rem;
+}
+.portfolio_detail:hover .entry_image {
+    opacity: 0.2;
+}
+.portfolio_detail:hover .middle {
+    opacity: 1;
 }
 .footer {
     height: 7rem;
