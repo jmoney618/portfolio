@@ -89,11 +89,17 @@ a:link, a:visited, a:hover, a:active {
     margin: auto;
 }
 .external_sites img {
-    position: relative;
-    top: 1rem;
+    position:  absolute;
+    left:      80%;
+    top:       76%;
     max-width: 3em;
-    margin: 0 0.2rem;
-    float: right;
+    margin:    1rem 0;
+    float:     right;
+}
+.jumbotron .external_sites img {
+    position: relative;
+    max-width: 3em;
+    margin: 1rem 0;
 }
 .portfolio_heading {
     max-width: 15%;
@@ -108,9 +114,9 @@ a:link, a:visited, a:hover, a:active {
 }
 .entry_bg {
     background-color:   rgb(233, 236, 239);
-    height:             90%;
+    height:             23rem;
     margin:             3rem auto;
-    padding:            1.25rem 1rem;
+    padding:            1rem;
     -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     -moz-box-shadow:    0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     box-shadow:         0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -126,7 +132,7 @@ a:link, a:visited, a:hover, a:active {
     position:         absolute;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    top:              50%;
+    top:              55%;
     left:             50%;
     transform:        translate(-50%, -50%);
     -ms-transform:    translate(-50%, -50%)
@@ -134,7 +140,7 @@ a:link, a:visited, a:hover, a:active {
 .entry_info {
     color:     rgb(113, 138, 166);
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .portfolio_detail:hover .entry_image {
     opacity: 0.1;
