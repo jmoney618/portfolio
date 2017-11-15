@@ -1,0 +1,74 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #e6e6e6;
+}
+.container {
+  background-color: #b3d4fc;
+  box-shadow: 0px 0px 20px #808080;
+}
+.navbar {
+  background-color: #999;
+  width: 100% !important;
+  height: 4rem;
+}
+.nav {
+  top: -4.5rem;
+  position: relative;
+  text-decoration: none;
+  padding: 1rem;
+}
+.nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-message {
+  font-size: 3rem;
+}
+#hero {
+  position: relative;
+  min-height: 25rem;
+}
+#hero-image {
+  color: #000; /* this will be removed once picture is put in */
+  background-color: #fff; /* this will be removed once picture is put in */
+  height: 16rem;
+  padding: 2rem;
+  border-radius: 25%;
+  box-shadow: 0 0 10px #808080;
+}
+.social_media a {
+  text-decoration: none;
+  color: #fff;
+}
+.divider {
+  background-color: #e6e6e6;
+  margin: 4rem auto 0 auto;
+}
+#portfolio {
+  background-color: #fff;
+  position: relative;
+  min-height: 1600px;
+}
+#portfolio_link {
+  color: #808080;
+  padding: 2rem;
+}
+.portfolio_entry {
+  height: 20rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px #808080;
+  color: #808080;
+  line-height: 15rem;
+}
+footer {
+  width: 100%;
+  height: 8rem;
+  background-color: #999;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 5rem;
+}
