@@ -150,7 +150,7 @@ a:link, a:visited, a:hover, a:active {
   opacity: 1;
 }
 .footer {
-  height:           7rem;
+  min-height:           10rem;
   width:            100%;
   margin-top:       3rem;
   background-color: rgb(235, 237, 240);
