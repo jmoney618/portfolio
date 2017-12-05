@@ -1,0 +1,120 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #e6e6e6;
+}
+.container {
+  background-color: #b3d4fc;
+  box-shadow: 0px 0px 20px #808080;
+}
+.navbar {
+  background-color: #999;
+  width: 100% !important;
+  height: 4rem;
+}
+.nav {
+  top: -4.5rem;
+  position: relative;
+  text-decoration: none;
+  padding: 1rem;
+}
+.nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-message {
+  font-size: 3rem;
+}
+#hero {
+  position: relative;
+  min-height: 25rem;
+}
+#hero-image {
+  color: #000; /* this will be removed once picture is put in */
+  background-color: #fff; /* this will be removed once picture is put in */
+  height: 16rem;
+  padding: 2rem;
+  border-radius: 25%;
+  box-shadow: 0 0 10px #808080;
+}
+.social_media a {
+  text-decoration: none;
+  color: #fff;
+}
+.divider {
+  background-color: #e6e6e6;
+  margin: 4rem auto 0 auto;
+}
+#portfolio {
+  background-color: #fff;
+  position: relative;
+  min-height: 1600px;
+}
+.portfolio_heading {
+  max-width: 60%;
+  height: 30%;
+  margin: 2rem auto 0 auto;
+  padding: 1.25rem;
+  -webkit-border-radius: 100px / 50px;
+  -moz-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.portfolio_entry {
+  color: #808080;
+  height: 20rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px #808080;
+}
+/*.entry_bg {
+  background-color:   rgb(233, 236, 239);
+  height:             23rem;
+  margin:             3rem auto;
+  padding:            1rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow:    0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow:         0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}*/
+.entry_bg h3 {
+  margin: 0;
+}
+.entry_image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition:       .5s ease;
+  opacity:          0;
+  position:         absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  top:              55%;
+  left:             50%;
+  transform:        translate(-50%, -50%);
+  -ms-transform:    translate(-50%, -50%)
+}
+.entry_info {
+  color:     rgb(113, 138, 166);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.portfolio_detail:hover .entry_image {
+  opacity: 0.1;
+}
+.portfolio_detail:hover .middle {
+  opacity: 1;
+}
+footer {
+  width: 100%;
+  height: 8rem;
+  background-color: #999;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 5rem;
+}
